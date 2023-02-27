@@ -1,42 +1,47 @@
 ---
 id: ethereum-polygon
-title: Ethereum ↔ Polygon
-description: Build your next blockchain app on Polygon.
+title: 이더리움 ↔ Polygon
+description: Polygon에서 차세대 블록체인 앱을 구축하세요.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - polygon
+  - ethereum
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
-Plasma Secured Solution to transfer your assets from Ethereum to Polygon and vice-versa.
-* Use [matic.js](https://github.com/maticnetwork/matic.js) to interact with the Polygon Plasma contracts.
+# 이더리움 ↔ Polygon {#ethereum-polygon}
 
+플라즈마 보안 솔루션은 이더리움에서 Polygon으로 또는 그 반대로 여러분의 자산을 이전합니다.
+* Polygon 플라즈마 계약과의 상호 작용을 위해 [matic.js](https://github.com/maticnetwork/matic.js)를 사용합니다.
 
-<!-- * [getting-started](https://maticnetwork.github.io/matic.js/): Set-up the environment for maticjs.
-1. [(Ethereum → Matic)](/docs/develop/maticjs/deposit): Deposit assets from root chain to Matic.
-2. [(Matic ↔ Matic)](/docs/develop/maticjs/transfer): Transfer assets between accounts on Matic.
-3. [(Matic → Ethereum)](/docs/develop/maticjs/withdraw): Withdraw assets from Matic to root chain. -->
+## 흐름 {#flow}
+다음은 Polygon에 대한 계약 배포와 이더리움↔Polygon에 대한 지원의 흐름입니다.
 
-## Flow
-Here is the Flow with the deployment of your contracts on Polygon and Support for Ethereum↔Polygon.
+1. 사용자는 ERC-20 토큰을 이더리움에  XToken으로 배포합니다.
 
-1. User deploys ERC-20 token to Ethereum - XToken
+2. 이제 [Polygon](https://t.me/joinchat/HkoSvlDKW0qKs_kK4Ow0hQ)과 계약 주소를 공유합니다. 다음은 요청 예시입니다.
 
-2. Now share your contract address with [Polygon](https://t.me/joinchat/HkoSvlDKW0qKs_kK4Ow0hQ). Here is an example request...
-> Hello everyone, We are AwesomeDApp deployed on Polygon. Looking for a solution to transfer my assets from Ethereum to Polygon and vice-versa. <br/><br/> A short description on my AwesomeDApp...<br/><br/> Token_Address on Ropsten-> "0x.."<br/> Token_Name-> "XToken"<br/> Token_Symbol-> "X"<br/> Token_Decimals-> "18"<br/><br/> Requesting you to Map these tokens to Polygon Testnet Version.<br/>
+> 안녕하세요 여러분, 우리는 Polygon에 배포된 AwesomeDAPP입니다. 이더리움에서 Polygon 또는 Polygon에서 이더리움으로 자산을 이전할 솔루션을 찾고 있습니다. <br/><br/>
+> 내 AwesomeDAPP에 대한 간단한 설명...<br/><br/>
+> Token_Address on Ropsten-> "0x.."<br/>
+> Token_Name-> "XToken"<br/>
+> Token_Symbol-> "X"<br/>
+> Token_Decimals-> "18"<br/><br/>
+> Polygon 테스트넷 버전으로 이 토큰을 매핑할 것을 요청합니다.<br/>
 
-We will deploy a Child Contract for you on Polygon which can be flexible based on the requirements and mapped to your tokens Ethereum ↔ Polygon.(Deployment on Polygon requires it native token Polygon, which can be deposited from Ethereum to Polygon or can be bought at Secondary Market Place.)
+우리는 여러분을 위해 차일드 계약을 Polygon에 배포할 예정으로, 이 계약은 요건에 따라 유연하고 토큰 이더리움 ↔ Polygon에 매핑될 수 있습니다. (Polygon에 배포하려면  네이티브 토큰 Polygon이 필요한데, 이는 이더리움에서 Polygon으로 입금되거나 Secondary Market Place에서 구매할 수 있습니다.)
 
-3. User can mint the Xtokens and Transfer on Ethereum. For example let's say 100XToken are mint and then transfer to other another account.
+3. 사용자는 Xtokens을 발행하고 이더리움에서 전송할 수 있습니다. 예를 들면, 100XToken이 발행되었고 다른 계정으로 이전한다고 가정해 봅니다.
 
-4. To avail these tokens on Polygon Chain, Call function deposit which will call for two transactions first approve and then depositERC20.
+4. 해당 토큰을 Polygon 체인에서 사용하려면 function deposit을 호출하여 두 트랜잭션을 먼저 승인한 후에 depositERC20을 호출합니다.
 
-5. Now 100XTokens are available on Polygon Chain at the same address.
+5. 이제 100XToken은 동일한 주소의 Polygon 체인에서 사용 가능합니다.
 
-6. You can transfer 50 XToken from YourAddress to NewAddress. Again for transactions on Polygon similar to Ethereum, Polygon uses it own Native token.
+6. 사용자의 주소에서 새로운 주소로 50XToken을 이전할 수 있습니다. Polygon에서의 트랜잭션은 이더리움과 유사하며, Polygon은 자체 네이티브 토큰을 사용합니다.
 
-7. If the users want to get back these Xtoken on Ethereum Chain, then call StartWithdraw which will withdraw from childTokenContract and Burn these tokens on Polygon Chain. To avoid any bad participation, A set of validation will take place. Once it is done the tokens will be available at Ethereum Chain.
+7. 사용자가 해당 XToken을 이더리움 체인으로 되돌리고 싶다면, StartWithdraw를 호출하여 childTokenContract로 부터 인출하고, 해당 토큰을 Polygon 체인에서 소각합니다. 악의적인 행위를 방지하기 위해 일련의 유효성 검사가 진행됩니다. 완료된 후, 토큰은 이더리움 체인에서 사용할 수 있습니다.
 
-8. Call processExits() to receive those tokens back to your EOA or your account address.
+8. 해당 토큰을 사용자의 EOA 또는 계정 주소로 다시 받으려면 processExits()을 호출합니다.
 
-9. You should see the 50 XToken on the Ethereum mainnet at you Account Address.
+9. 이더리움 메인넷의 사용자의 계정 주소에 50XToken이 있어야 합니다.
