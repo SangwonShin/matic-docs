@@ -2,23 +2,23 @@
 id: index
 title: PlasmaClient
 keywords:
-  - 'maticjs, plasma client, contract, polygon, sdk'
-description: 'PlasmaClient를 사용하면 POS Bridge와 상호 작용할 수 있습니다.'
+- 'maticjs, plasma client, contract, polygon, sdk'
+description: 'PlasmaClient를 사용하면 PoS 브리지와 상호작용할 수 있습니다.'
 ---
 
-# 플라즈마 브리지
+# 플라스마 브리지 {#plasma-bridge}
 
-플라즈마 브리지 기능은 [별도의 저장소](https://github.com/maticnetwork/maticjs-plasma)에서 사용할 수 있습니다. 따라서 `플라즈마` 브리지를 사용하기 위해서는 별도의 패키지를 설치해야 합니다.
+플라스마 브리지 기능은 [별도의 저장소](https://github.com/maticnetwork/maticjs-plasma)에서 사용 가능합니다. `plasma` 브리지를 사용하기 위해서는 별도의 패키지를 설치해야 합니다.
 
-## 설치
+## 설치 {#installation}
 
 ```
 npm i @maticnetwork/maticjs-plasma
 ```
 
-## 설정
+## 설정 {#setup}
 
-`PlasmaClient`는 **Plasma** Bridge와 상호 작용하는 데 사용할 수 있습니다.
+`PlasmaClient`를 사용해 **플라스마** 브리지와 상호작용할 수 있습니다.
 
 ```
 import { PlasmaClient } from "@maticnetwork/maticjs-plasma"
@@ -44,4 +44,4 @@ await plasmaClient.init({
 
 ```
 
-`plasmaClient`가 시작되면 사용 가능한 모든 API와 상호 작용할 수 있습니다.
+`plasmaClient`가 시작되면 사용 가능한 모든 API와 상호작용할 수 있습니다.
