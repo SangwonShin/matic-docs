@@ -1,26 +1,32 @@
 ---
 id: network
-title: Networks
-description: Current Testnet and Mainnet status and information.
+title: 네트워크
+description: 현재 테스트넷 및 메인넷 상태 및 정보
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - polygon
+  - networks
+  - testnet
+  - mainnet
+  - mumbai
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
+# 네트워크 {#networks}
 
-- [Network Details](/docs/operate/network) -> To view network details
-- [Polygon Faucet](https://faucet.polygon.technology/) -> Get TestTokens at Polygon faucet
-
-
-## Testnets
-| Network        | RPC                                                        | Status  | Parent Chain | Block Explorer                              |
-| -------------- | ---------------------------------------------------------- | ------- | ------------ | ------------------------------------------- |
-| Mumbai Testnet | Sign up for a free RPC link at https://rpc.maticvigil.com/ | Running | Goërli       | [:ledger:](https://mumbai.polygonscan.com/) |
+- [네트워크 세부 정보](/docs/integrate/network-detail) -> 네트워크 세부 정보 보기
+- [Polygon Faucet](https://faucet.polygon.technology/) -> Polygon Faucet에서 테스트 토큰 받기
 
 
-## Mainnets
-| Network             | RPC                                                        | Status  | Parent Chain | Block Explorer                       |
-| ------------------- | ---------------------------------------------------------- | ------- | ------------ | ------------------------------------ |
-| **Polygon Mainnet** | Sign up for a free RPC link at https://rpc.maticvigil.com/ | Running | Ethereum     | [:ledger:](https://polygonscan.com/) |
+## 테스트넷 {#testnets}
+| 네트워크 | RPC | 상태 | 상위 체인 | 블록 탐색기 |
+|-----------|------|----------------|----------------------------------------------------------------------------------------------------------------|------------------------------------|
+| 뭄바이 테스트넷 | https://rpc.maticvigil.com/에 가입하여 무료 RPC 링크를 얻으세요 | 실행 | 고에리 | [:원장:](https://mumbai.polygonscan.com/) |
+
+
+## 메인넷 {#mainnets}
+| 네트워크 | RPC | 상태 | 상위 체인 | 블록 탐색기 |
+|---------------|------|------------|------------------------------------------------------------------------------|-------------------------------------
+| **Polygon 메인넷** | https://rpc.maticvigil.com/에 가입하여 무료 RPC 링크를 얻으세요 | 실행 | 이더리움 | [:원장:](https://polygonscan.com/) |
 
