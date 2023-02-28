@@ -1,6 +1,7 @@
 ---
-id: polybft
-title: PolyBFT
+id: polybft-overview
+title: Polygon Byzantine Fault Tolerance (PolyBFT)
+sidebar_label: What is PolyBFT
 description: "Explanation about PolyBFT, the consensus mechanism for Polygon Edge."
 keywords:
   - docs

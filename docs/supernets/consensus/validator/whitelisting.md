@@ -1,6 +1,6 @@
 ---
-id: polybft-staking
-title: Staking
+id: polybft-whitelist
+title: Whitelisting
 description: "Explanation about PolyBFT, the consensus mechanism for Polygon Edge."
 keywords:
   - docs

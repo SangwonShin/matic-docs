@@ -1470,7 +1470,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Core components",
+      label: "System Design",
       link: {
         type: "generated-index",
       },
@@ -1478,7 +1478,7 @@ module.exports = {
       items: [
         {
           type: "category",
-          label: "Architecture",
+          label: "Modular Architecture",
           link: {
             type: "generated-index",
           },
@@ -1495,14 +1495,24 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Consensus",
+          label: "Consensus Protocol",
           link: {
             type: "generated-index",
           },
           items: [
             "supernets/consensus/supernets-pos",
-            "supernets/consensus/polybft",
-            "supernets/consensus/ibft",
+            {
+              type: "category",
+              label: "Polygon Byzantine Fault Tolerance (PolyBFT)",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/consensus/polybft/polybft-overview",
+                "supernets/consensus/polybft/ibft-overview",
+                "supernets/consensus/polybft/polybft-staking",
+              ],
+            },
             {
               type: "category",
               label: "Validators",
@@ -1511,15 +1521,15 @@ module.exports = {
               },
               items: [
                 "supernets/consensus/validator/polybft-valiadator-overview",
-                "supernets/consensus/validator/polybft-staking",
                 "supernets/consensus/validator/polybft-selection",
+                "supernets/consensus/validator/polybft-whitelist",
                 "supernets/consensus/validator/polybft-rewards",
                 "supernets/consensus/validator/polybft-slashing",
               ],
             },
             {
               type: "category",
-              label: "Governance",
+              label: "On-chain governance",
               link: {
                 type: "generated-index",
               },
@@ -1568,34 +1578,44 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Deploy Supernets",
+      label: "Build a Supernet",
       link: {
         type: "generated-index",
       },
       collapsed: false,
       items: [
+        "supernets/operate/supernets-install",
         {
           type: "category",
-          label: "Run a local Supernet",
+          label: "Operate a local blockchain",
           link: {
             type: "generated-index",
           },
           items: [
-            "supernets/operate/supernets-setup-dev-env",
             "supernets/operate/supernets-local-deploy",
+            "supernets/operate/supernets-setup-dev-env",
           ],
         },
-        "supernets/operate/supernets-aws-deploy",
-        "supernets/operate/supernets-stake-mainnet",
         {
           type: "category",
-          label: "Deploy the cross-chain bridge",
+          label: "Operate a Supernet",
           link: {
             type: "generated-index",
           },
           items: [
-            "supernets/operate/supernets-deploy-bridge-testnet",
-            "supernets/operate/supernets-deploy-bridge-mainnet",
+            {
+              type: "category",
+              label: "Deploy the cross-chain bridge",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/operate/supernets-deploy-bridge",
+                "supernets/operate/supernets-bridge-transfer",
+              ],
+            },
+            "supernets/operate/supernets-stake-mainnet",
+            "supernets/operate/supernets-aws-deploy",
           ],
         },
       ],

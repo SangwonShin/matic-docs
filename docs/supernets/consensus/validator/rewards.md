@@ -1,6 +1,7 @@
 ---
 id: polybft-rewards
-title: Rewards
+title: Reward scheme
+sidebar_label: Rewards
 description: "Explanation about PolyBFT, the consensus mechanism for Polygon Edge."
 keywords:
   - docs

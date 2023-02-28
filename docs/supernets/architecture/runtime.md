@@ -1,7 +1,7 @@
 ---
 id: supernets-runtime
-title: Runtime
-sidebar_label: Runtime
+title: EVM Runtime
+sidebar_label: EVM runtime
 description: Introduction to the architecture of Polygon Supernets.
 keywords:
   - docs

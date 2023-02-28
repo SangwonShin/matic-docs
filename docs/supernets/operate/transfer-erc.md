@@ -1,7 +1,7 @@
 ---
-id: supernets-deploy-bridge-mainnet
-title: How to Deploy the Bridge on Mainnet
-sidebar_label: How to deploy the bridge on Mainnet
+id: supernets-bridge-transfer
+title: Transfer Assets
+sidebar_label: How to transfer assets
 description: "An introduction to Polygon Supernets."
 keywords:
   - docs

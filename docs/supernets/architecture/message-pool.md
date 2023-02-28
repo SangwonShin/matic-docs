@@ -1,7 +1,7 @@
 ---
 id: supernets-message-pool
 title: Message Pool
-sidebar_label: Message Pool
+sidebar_label: mempool
 description: Introduction to the architecture of Polygon Supernets.
 keywords:
   - docs

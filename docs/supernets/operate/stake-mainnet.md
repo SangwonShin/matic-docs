@@ -1,7 +1,7 @@
 ---
 id: supernets-stake-mainnet
-title: How to Stake on Mainnet
-sidebar_label: Stake on mainnet
+title: Stake on Mainnet
+sidebar_label: How to stake
 description: "An introduction to Polygon Supernets."
 keywords:
   - docs

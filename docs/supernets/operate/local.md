@@ -1,6 +1,6 @@
 ---
 id: supernets-local-deploy
-title: How to Deploy a local blockchain
+title: Deploy a local blockchain
 sidebar_label: How to deploy a local blockchain
 description: "An introduction to Polygon Supernets."
 keywords:

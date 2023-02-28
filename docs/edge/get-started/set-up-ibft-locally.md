@@ -77,7 +77,7 @@ polygon-edge secrets init --data-dir test-chain-4
 
 Each of these commands will print the validator key, bls public key and the [node ID](https://docs.libp2p.io/concepts/peer-id/). You will need the Node ID of the first node for the next step.
 
-### Outputting Secrets 
+### Outputting Secrets
 The secrets output can be retrieved again, if needed.
 
 ```bash
@@ -93,7 +93,7 @@ information about all the remaining nodes on the network. The `bootnode` is some
 every polygon-edge node needs to have a set of bootnodes specified which will be contacted to provide information on how to connect with
 all remaining nodes in the network.
 
-To create the connection string for specifying the bootnode, we will need to conform 
+To create the connection string for specifying the bootnode, we will need to conform
 to the [multiaddr format](https://docs.libp2p.io/concepts/addressing/):
 ```
 /ip4/<ip_address>/tcp/<port>/p2p/<node_id>
@@ -101,7 +101,7 @@ to the [multiaddr format](https://docs.libp2p.io/concepts/addressing/):
 
 In this guide, we will treat the first and second nodes as the bootnodes for all other nodes. What will happen in this scenario
 is that nodes that connect to the `node 1` or `node 2` will get information on how to connect to one another through the mutually
-contacted bootnode. 
+contacted bootnode.
 
 :::info You need to specify at least one bootnode to start a node
 
@@ -122,7 +122,7 @@ After the assembly, the multiaddr connection string to the `node 1` which we wil
 ```
 Similarly, we construct the multiaddr for second bootnode as shown below
 ```
-/ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAmS9Nq4QAaEiogE4ieJFUYsoH28magT7wSvJPpfUGBj3Hq 
+/ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAmS9Nq4QAaEiogE4ieJFUYsoH28magT7wSvJPpfUGBj3Hq
 ```
 
 :::info DNS hostnames instead of ips
@@ -138,7 +138,7 @@ The multiaddr format for the connection string while using DNS hostnames is as i
 ## Step 3: Generate the genesis file with the 4 nodes as validators
 
 ````bash
-polygon-edge genesis --consensus ibft --ibft-validators-prefix-path test-chain- --bootnode /ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmJxxH1tScDX2rLGSU9exnuvZKNM9SoK3v315azp68DLPW --bootnode /ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAmS9Nq4QAaEiogE4ieJFUYsoH28magT7wSvJPpfUGBj3Hq 
+polygon-edge genesis --consensus ibft --ibft-validators-prefix-path test-chain- --bootnode /ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmJxxH1tScDX2rLGSU9exnuvZKNM9SoK3v315azp68DLPW --bootnode /ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAmS9Nq4QAaEiogE4ieJFUYsoH28magT7wSvJPpfUGBj3Hq
 ````
 
 What this command does:
@@ -239,7 +239,7 @@ cat /proc/$(pidof polygon-edge)/limits
 
 ## Step 4: Run all the clients
 
-Because we are attempting to run a Polygon Edge network consisting of 4 nodes all on the same machine, we need to take care to 
+Because we are attempting to run a Polygon Edge network consisting of 4 nodes all on the same machine, we need to take care to
 avoid port conflicts. This is why we will use the following reasoning for determining the listening ports of each server of a node:
 
 - `10000` for the gRPC server of `node 1`, `20000` for the GRPC server of `node 2`, etc.
@@ -286,9 +286,9 @@ from node failure.
 
 :::info Start the client using config file
 
-Instead of specifying all configuration parameters as CLI arguments, the Client can also be started using a config file by executing the following command: 
+Instead of specifying all configuration parameters as CLI arguments, the Client can also be started using a config file by executing the following command:
 
-````bash 
+````bash
 polygon-edge server --config <config_file_path>
 ````
 Example:
@@ -300,17 +300,17 @@ Currently, we support `yaml` and `json` based configuration files, sample config
 
 :::
 
-:::info Steps to run a non-validator node 
+:::info Steps to run a non-validator node
 
 A Non-validator will always sync the latest blocks received from the validator node, you can start a non-validator node by running the following command.
 
-````bash 
+````bash
 polygon-edge server --data-dir <directory_path> --chain <genesis_filename> --grpc-address <portNo> --libp2p <portNo> --jsonrpc <portNo>
 ````
 For example, you can add **fifth** Non-validator client by executing the following command :
 
 ````bash
-polygon-edge server --data-dir ./test-chain --chain genesis.json --grpc-address :50000 --libp2p :50001 --jsonrpc :50002 
+polygon-edge server --data-dir ./test-chain --chain genesis.json --grpc-address :50000 --libp2p :50001 --jsonrpc :50002
 ````
 :::
 

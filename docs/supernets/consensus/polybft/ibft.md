@@ -1,6 +1,7 @@
 ---
-id: ibft
-title: IBFT 2.0
+id: ibft-overview
+title: Istanbul Byzantine Fault Tolerant (IBFT) 2.0
+sidebar_label: Istanbul Byzantine Fault Tolerant (IBFT) 2.0
 description: "Explanation about PolyBFT, the consensus mechanism for Polygon Edge."
 keywords:
   - docs

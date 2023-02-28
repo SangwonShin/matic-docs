@@ -1,7 +1,7 @@
 ---
 id: supernets-aws-deploy
-title: How to create an AWS Deployment
-sidebar_label: Deploy on AWS
+title: AWS Deployment with Terraform
+sidebar_label: How to create a cloud deployment
 description: "An introduction to Polygon Supernets."
 keywords:
   - docs

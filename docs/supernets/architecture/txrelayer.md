@@ -1,7 +1,7 @@
 ---
 id: supernets-txrelayer
 title: TxRelayer
-sidebar_label: TxRelayer
+sidebar_label: txrelayer
 description: Introduction to the architecture of Polygon Supernets.
 keywords:
   - docs
