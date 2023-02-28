@@ -1,26 +1,32 @@
 ---
 id: network
-title: Networks
-description: Current Testnet and Mainnet status and information.
+title: Сети
+description: Текущий статус и информация о тестовых и основных сетях.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - polygon
+  - networks
+  - testnet
+  - mainnet
+  - mumbai
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
+# Сети {#networks}
 
-- [Network Details](/docs/operate/network) -> To view network details
-- [Polygon Faucet](https://faucet.polygon.technology/) -> Get TestTokens at Polygon faucet
-
-
-## Testnets
-| Network        | RPC                                                        | Status  | Parent Chain | Block Explorer                              |
-| -------------- | ---------------------------------------------------------- | ------- | ------------ | ------------------------------------------- |
-| Mumbai Testnet | Sign up for a free RPC link at https://rpc.maticvigil.com/ | Running | Goërli       | [:ledger:](https://mumbai.polygonscan.com/) |
+- [Сведения о сети](/docs/integrate/network-detail) -> просмотр сведений о сети
+- [Polygon Faucet](https://faucet.polygon.technology/) -> получение тестовых токенов в Polygon Faucet
 
 
-## Mainnets
-| Network             | RPC                                                        | Status  | Parent Chain | Block Explorer                       |
-| ------------------- | ---------------------------------------------------------- | ------- | ------------ | ------------------------------------ |
-| **Polygon Mainnet** | Sign up for a free RPC link at https://rpc.maticvigil.com/ | Running | Ethereum     | [:ledger:](https://polygonscan.com/) |
+## Тестовые сети {#testnets}
+| Сеть | Удаленный вызов процедур | Статус | Родительская цепочка | Обозреватель блоков |
+|-----------|------|----------------|----------------------------------------------------------------------------------------------------------------|------------------------------------|
+| Mumbai Testnet | Оформите подписку на бесплатную ссылку для удаленного вызова процедур по ссылке https://rpc.maticvigil.com/. | Работает | Goërli | [:ledger:](https://mumbai.polygonscan.com/) |
+
+
+## Основные сети {#mainnets}
+| Сеть | Удаленный вызов процедур | Статус | Родительская цепочка | Обозреватель блоков |
+|---------------|------|------------|------------------------------------------------------------------------------|-------------------------------------
+| **Polygon Mainnet** | Оформите подписку на бесплатную ссылку для удаленного вызова процедур по ссылке https://rpc.maticvigil.com/. | Работает | Ethereum | [:ledger:](https://polygonscan.com/) |
 
