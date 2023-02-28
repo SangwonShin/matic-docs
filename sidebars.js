@@ -1476,23 +1476,9 @@ module.exports = {
       },
       collapsed: false,
       items: [
-        {
-          type: "category",
-          label: "Modular Architecture",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "supernets/architecture/overview",
-            "supernets/architecture/supernets-runtime",
-            "supernets/architecture/supernets-libp2p",
-            "supernets/architecture/supernets-message-pool",
-            "supernets/architecture/supernets-txpool",
-            "supernets/architecture/supernets-txrelayer",
-            "supernets/architecture/supernets-json-rpc",
-            "supernets/architecture/supernets-grpc",
-          ],
-        },
+        "supernets/architecture/overview",
+        "supernets/architecture/supernets-runtime",
+        "supernets/architecture/supernets-libp2p",
         {
           type: "category",
           label: "Consensus Protocol",
@@ -1552,9 +1538,27 @@ module.exports = {
             "supernets/bridge/checkpoint",
           ],
         },
+        "supernets/architecture/supernets-message-pool",
+        "supernets/architecture/supernets-txpool",
+        "supernets/architecture/supernets-txrelayer",
+        "supernets/architecture/supernets-json-rpc",
+        "supernets/architecture/supernets-grpc",
         {
           type: "category",
-          label: "Tokens and Assets",
+          label: "Accounts and transactions",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/accounts/supernets-account-generation",
+            "supernets/accounts/supernets-account-abstract",
+            "supernets/accounts/supernets-balance-transfers",
+            "supernets/accounts/supernets-transaction-fees",
+          ],
+        },
+        {
+          type: "category",
+          label: "Tokens and assets",
           link: {
             type: "generated-index",
           },
