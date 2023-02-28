@@ -1532,7 +1532,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Bridge",
+          label: "Cross-Chain Bridge",
           link: {
             type: "generated-index",
           },
@@ -1544,7 +1544,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Assets",
+          label: "Tokens and Assets",
           link: {
             type: "generated-index",
           },
