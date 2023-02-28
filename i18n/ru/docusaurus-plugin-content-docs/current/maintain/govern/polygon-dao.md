@@ -1,7 +1,7 @@
 ---
 id: polygon-dao
-title: Polygon DAO
-description: Learn about the Polygon DAO and how to participate in Polygon's governance
+title: ДАО Polygon
+description: Узнайте о децентрализованной автономной организации (ДАО) Polygon и о том, как принять участие в управлении Polygon.
 keywords:
   - docs
   - matic
@@ -9,11 +9,11 @@ keywords:
   - DAO
   - governance
 slug: polygon-dao
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 <!-- This page is a WIP -->
 
-:::note This page is under construction
+:::note Эта страница находится в разработке.
 
 :::
