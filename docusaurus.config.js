@@ -521,7 +521,7 @@ module.exports = {
                     rel: null,
                   },
                   {
-                    href: '/docs/supernets/overview',
+                    href: '/docs/supernets/get-started/what-are-supernets',
                     label: 'Supernets',
                     target: '_self',
                     rel: null,

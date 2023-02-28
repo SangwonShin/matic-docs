@@ -1,7 +1,7 @@
 ---
-id: architecture
+id: overview
 title: Architecture Overview
-sidebar_label: Architecture
+sidebar_label: Overview
 description: Introduction to the architecture of Polygon Supernets.
 keywords:
   - docs

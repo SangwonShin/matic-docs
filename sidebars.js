@@ -1455,37 +1455,174 @@ module.exports = {
   // #####################################################################
 
   supernets: [
-    "supernets/overview",
-    "supernets/architecture",
-    "supernets/polybft",
     {
       type: "category",
-      label: "Core Contracts",
+      label: "Get started",
       link: {
         type: "generated-index",
       },
       collapsed: false,
       items: [
-        "supernets/contracts/state-sender",
-        "supernets/contracts/state-receiver",
-        "supernets/contracts/checkpoint-manager",
-        "supernets/contracts/exit-helper",
-        "supernets/contracts/reward-pool",
-        "supernets/contracts/validator-queue",
-        "supernets/contracts/withdrawal-queue",
+        "supernets/get-started/what-are-supernets",
+        "supernets/get-started/why-supernets",,
+        "supernets/get-started/quick-start",
       ],
     },
     {
       type: "category",
-      label: "Bridge",
+      label: "Core components",
       link: {
         type: "generated-index",
       },
       collapsed: false,
       items: [
-        "supernets/bridge/overview",
-        "supernets/bridge/statesync",
-        "supernets/bridge/checkpoint",
+        {
+          type: "category",
+          label: "Architecture",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/architecture/overview",
+            "supernets/architecture/supernets-runtime",
+            "supernets/architecture/supernets-libp2p",
+            "supernets/architecture/supernets-message-pool",
+            "supernets/architecture/supernets-txpool",
+            "supernets/architecture/supernets-txrelayer",
+            "supernets/architecture/supernets-json-rpc",
+            "supernets/architecture/supernets-grpc",
+          ],
+        },
+        {
+          type: "category",
+          label: "Consensus",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/consensus/supernets-pos",
+            "supernets/consensus/polybft",
+            "supernets/consensus/ibft",
+            {
+              type: "category",
+              label: "Validators",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/consensus/validator/polybft-valiadator-overview",
+                "supernets/consensus/validator/polybft-staking",
+                "supernets/consensus/validator/polybft-selection",
+                "supernets/consensus/validator/polybft-rewards",
+                "supernets/consensus/validator/polybft-slashing",
+              ],
+            },
+            {
+              type: "category",
+              label: "Governance",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/consensus/governance/polybft-gov-overview",
+                "supernets/consensus/governance/polybft-network-parameters",
+              ],
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Bridge",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/bridge/overview",
+            "supernets/bridge/statesync",
+            "supernets/bridge/checkpoint",
+          ],
+        },
+        {
+          type: "category",
+          label: "Assets",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/assets/erc/erc20",
+            "supernets/assets/erc/erc721",
+            {
+              type: "category",
+              label: "MRC-20",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/assets/mrc20/mrc20-overview",
+                "supernets/assets/mrc20/how-to-mint-mrc20",
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Deploy Supernets",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: false,
+      items: [
+        {
+          type: "category",
+          label: "Run a local Supernet",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/operate/supernets-setup-dev-env",
+            "supernets/operate/supernets-local-deploy",
+          ],
+        },
+        "supernets/operate/supernets-aws-deploy",
+        "supernets/operate/supernets-stake-mainnet",
+        {
+          type: "category",
+          label: "Deploy the cross-chain bridge",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/operate/supernets-deploy-bridge-testnet",
+            "supernets/operate/supernets-deploy-bridge-mainnet",
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Advanced",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "Core contracts",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/advanced/contracts/state-sender",
+            "supernets/advanced/contracts/state-receiver",
+            "supernets/advanced/contracts/checkpoint-manager",
+            "supernets/advanced/contracts/exit-helper",
+            "supernets/advanced/contracts/reward-pool",
+            "supernets/advanced/contracts/validator-queue",
+            "supernets/advanced/contracts/withdrawal-queue",
+          ],
+        },
       ],
     },
     {

@@ -52,7 +52,7 @@ export const secondRow = [
     },
     {
         title: "Supernets",
-        linkUrl: "docs/supernets/overview",
+        linkUrl: "docs/supernets/get-started/what-are-supernets",
         imageUrl: "img/home/polygon-edge.svg",
         description: "Application-specific blockchain networks that are interoperable, scalable, and secure."
     },

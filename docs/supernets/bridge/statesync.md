@@ -17,7 +17,7 @@ A Polygon Edge-based chain, that is, a `childchain`, can connect to a layer 1 ne
 that is, a `rootchain` to send and receive messages.
 
 A user sends a transaction into a [`StateSender`](../contracts/state-sender.md) contract.
-A [`StateReceiver`](/supernets/contracts/state-receiver.md) contract is present on the `childchain`
+A [`StateReceiver`](/supernets/advanced/contracts/state-receiver.md) contract is present on the `childchain`
 that is used to listen for state `data`.
 
 ![Commitment Diagram](/img/supernets/commitment.png)
