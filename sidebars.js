@@ -1011,6 +1011,7 @@ module.exports = {
                "zkEVM/protocol/zkevm-bridge",
                "zkEVM/protocol/exit-tree",
                "zkEVM/protocol/bridge-smart-contract",
+               "zkEVM/protocol/flow-of-asset",
               ]
         },
       ]
