@@ -48,14 +48,12 @@ Second, the **Bridge SC generates wrapped tokens the first time a new token is a
 
 As a result, as stated in this document, every transfer is protected by smart contracts.
 
-## The End-to-end Flow Of Asset
+## Features
 
-## Conclusion
+The Polygon zkEVM Bridge smart contract's main feature is the use of Exit Trees and the Global Exit Tree, with the Global Exit Tree Root serving as the primary source of state truth.
 
-The main feature of the Polygon zkEVM Bridge SC is the use of Exit Trees and the Global Exit Tree, where the Global Exit Tree Root is the main source of state truth.
+The use of two distinct Global Exit Root managers for L1 and L2, as well as separate logic for the Bridge SC and each of these Global Exit Root managers, allows for extensive network interoperability.
 
-The deployment of two distinct Global Exit Root managers for L1 and L2, as well as separate logics for the Bridge SC and each of these Global Exit Root managers, enables ample interoperability among networks.
+Meanwhile, all asset transfers can be validated by any L1 and L2 nodes due to data availability.
 
-Meanwhile, all asset transfers can be validated by any L1 and L2 nodes due to data availability. 
-
-This covers how the Polygon zkEVM's Bridge-related Smart Contracts guarantee security of assets transferred to and fro the zkEVM and any network.
+The sections that follow explain how the Polygon zkEVM Bridge-related smart contracts ensure the security of assets transferred between the zkEVM and any network.
