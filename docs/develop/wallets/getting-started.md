@@ -112,3 +112,5 @@ The following basic steps allow for the integration of a client-side application
 3. **Instantiate Contracts**: Once a web3 object is in place, we next instantiate our deployed contract, 
    with which we interact.
 4. **Call functions**: Fetch data via functions in the contract through our contract object.
+
+.
